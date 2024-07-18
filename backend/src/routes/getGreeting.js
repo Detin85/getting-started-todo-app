@@ -5,3 +5,13 @@ module.exports = async (req, res) => {
         greeting: GREETING,
     });
 };
+
+
+
+const GREETINGS = [
+    "Whalecome!",
+    "All hands on deck!",
+    "Charting the course ahead!",
+];
+
+
