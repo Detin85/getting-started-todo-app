@@ -1,9 +1,9 @@
 const GREETING = 'Hello world!';
 
 module.exports = async (req, res) => {
-    res.send({
-        greeting: GREETING,
-    });
+	res.send({
+	    greeting: GREETING,
+	});
 };
 
 
@@ -14,4 +14,8 @@ const GREETINGS = [
     "Charting the course ahead!",
 ];
 
-
+module.exports = async (req, res) => {
+    res.send({
+        greeting: GREETINGS[ Math.floor( Math.random() * GREETINGS.length )],
+    });
+};
